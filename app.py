@@ -34,7 +34,7 @@ class Authors(db.Model):
 
 @app.route("/", methods=["GET", "POST"])
 def library():
-    # library = db.execute
+    # library = 
     if request.method == "POST":
         return render_template("Not yet")
     else:
