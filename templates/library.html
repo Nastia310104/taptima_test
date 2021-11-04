@@ -6,9 +6,26 @@
 
 {% block body %}
     <div class="container">
-        {% for book in library %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Author</td>
+                    <td>Description</td>
+                    <td>Year</td>
+                    <td>Image</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% if library %}
+                    <tr>
+                        <td>155</td>
+                        <td>{{ library[0][1] }}</td>
+                        
 
-
-        {% endfor %}
+                    </tr>
+                    {% endif %}
+            </tbody>
+        </table>
     </div>
 {% endblock %}
