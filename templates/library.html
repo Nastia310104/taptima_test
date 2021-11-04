@@ -17,14 +17,15 @@
                 </tr>
             </thead>
             <tbody>
-                {% if library %}
+                {% for book in library %}
                     <tr>
-                        <td>155</td>
-                        <td>{{ library[0][1] }}</td>
-                        
-
+                        <td>{{ book[1] }}</td>
+                        <td>{{ book[2] }}</td>
+                        <td>{{ book[4] }}</td>
+                        <td>{{ book[6] }}</td>
+                        <td>{{ book[5] }}</td>
                     </tr>
-                    {% endif %}
+                    {% endfor %}
             </tbody>
         </table>
     </div>
